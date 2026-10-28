@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="hr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Neon Riviera — font specimen</title>
+<link rel="icon" href="data:,">
+<style>
+@font-face{font-family:Neon;src:url('./NeonRiviera-Color.ttf') format('truetype');font-display:block}
+@font-face{font-family:Mono;src:url('./NeonRiviera-Mono.ttf') format('truetype');font-display:block}
+*{box-sizing:border-box}body{margin:0;background:#0b0616;color:#f8eefc;font:15px/1.6 system-ui,sans-serif}
+main{max-width:1500px;margin:auto;padding:38px 54px 50px}.top{display:flex;justify-content:space-between;align-items:center;color:#c9accf;font:11px/1.5 ui-monospace,monospace;letter-spacing:2px;text-transform:uppercase}.badge{border:1px solid #695273;padding:6px 13px;border-radius:30px;color:#e1c9eb}
+.hero{margin:32px 0 22px;padding:48px 54px 44px;position:relative;overflow:hidden;border:1px solid #533259;border-radius:22px;background:radial-gradient(ellipse at 28% 63%,#c705a923,transparent 56%),radial-gradient(ellipse at 90% 17%,#176ede25,transparent 60%),linear-gradient(160deg,#231238,#170a22 65%,#280e30)}
+.hero:after{content:'';pointer-events:none;position:absolute;inset:auto 0 0;height:29%;background:repeating-linear-gradient(0deg,transparent 0 22px,#f85ed718 23px 24px);transform:perspective(80px) rotateX(28deg);transform-origin:bottom}
+.eyebrow{font:11px ui-monospace,monospace;letter-spacing:4px;color:#eea9e6;margin:0 0 8px}
+.big{font:clamp(130px,20.5vw,315px)/1.23 Neon;white-space:nowrap;margin:0 0 0 -5px;position:relative;z-index:1;letter-spacing:0}
+.title{font:clamp(37px,5.2vw,77px)/1.6 Neon;margin:0;white-space:nowrap}
+.sub{color:#b9a2c5;font-size:12px;letter-spacing:1px;margin:8px 0 0}
+.controls{display:flex;align-items:center;gap:15px;flex-wrap:wrap;margin:24px 0 16px}label{color:#ceb8d6;font-size:12px}input[type=text]{flex:1;min-width:210px;background:#1c1129;border:1px solid #553961;border-radius:9px;padding:12px 15px;color:white;font:14px system-ui}button{background:#392044;border:1px solid #775384;color:#fff;border-radius:8px;padding:12px 15px;cursor:pointer}input[type=range]{accent-color:#ff45df;width:100px}
+.try{border:1px solid #4b2b53;border-radius:14px;background:#160d20;padding:26px 35px;overflow-wrap:anywhere;min-height:150px;font:64px/1.7 Neon}
+.grid{display:grid;grid-template-columns:1.8fr 1fr;gap:25px;margin-top:24px}.panel{border-top:1px solid #43294c;padding-top:15px}.label{font:10px ui-monospace,monospace;letter-spacing:2px;color:#ae8eb9;margin-bottom:10px}.alphabet{font:30px/1.9 Neon;overflow-wrap:anywhere}.note{color:#bda6c7;font-size:12px;max-width:430px}.note strong{color:#f4d6f4}footer{margin-top:24px;border-top:1px solid #43294c;padding-top:15px;display:flex;gap:20px;justify-content:space-between;font:10px ui-monospace,monospace;letter-spacing:1px;color:#a98bb4}
+body.light{background:#eee8f5;color:#20112d}body.light .try{background:#faf5ff}body.mono .try{font-family:Mono;color:#ef78e6}
+@media(max-width:700px){main{padding:22px 18px}.hero{padding:30px 23px}.grid{grid-template-columns:1fr}.top{font-size:9px;letter-spacing:1px}.big{font-size:23vw}.title{font-size:6vw}.alphabet{font-size:22px}.try{padding:20px;font-size:42px}footer{flex-direction:column;gap:6px}}
+</style>
+<main>
+ <header class="top"><span>Neon Riviera / type collection 01</span><span class="badge">Installable · Shareable · Open license</span></header>
+ <section class="hero">
+  <p class="eyebrow">AFTER DARK. IN FULL COLOR.</p>
+  <div class="big">210GB</div>
+  <h1 class="title">NEON RIVIERA</h1>
+  <p class="sub">Debeli rez · Nakošeni oblici · Neonski gradijenti · Vektorski 3D rub</p>
+ </section>
+ <div class="controls">
+  <label for="sample">ISPROBAJ</label><input id="sample" type="text" value="Čarobna noć. Živi u boji!" aria-label="Tekst za isprobavanje fonta">
+  <label for="size">VELIČINA</label><input id="size" type="range" min="24" max="130" value="64" aria-label="Veličina fonta">
+  <button id="mode" type="button" aria-pressed="false">Jednobojni prikaz</button>
+ </div>
+ <div class="try" id="output">Čarobna noć. Živi u boji!</div>
+ <div class="grid">
+  <section class="panel"><div class="label">LATINICA + HRVATSKI ZNAKOVI</div>
+   <div class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789 ČĆĐŠŽ čćđšž !?&amp;@€</div>
+  </section>
+  <section class="panel"><div class="label">DVA PRAVA FONT FAJLA</div>
+   <p class="note"><strong>NeonRiviera-Color.ttf</strong><br>COLRv1: boje, gradijenti, svijetli rubovi i sjena ugrađeni su u font. Ovaj pregled najbolje radi u novijem Chromeu ili Edgeu.</p>
+   <p class="note"><strong>NeonRiviera-Mono.ttf</strong><br>Klasični TTF za aplikacije koje ne podržavaju fontove u boji. Boju teksta odabireš u aplikaciji.</p>
+   <p class="note">Samostalna interpretacija referentnog natpisa, izvedena iz Montserrat Black Italic. SIL Open Font License 1.1 dopušta korištenje, ugrađivanje i dijeljenje uz priloženu licencu.</p>
+  </section>
+ </div>
+ <footer><span>NEON RIVIERA — V1.000</span><span>COLOR / MONO · LATIN EXTENDED · SIL OFL 1.1</span></footer>
+</main>
+<script>
+const sample=document.querySelector('#sample'), output=document.querySelector('#output');
+sample.addEventListener('input',()=>output.textContent=sample.value);
+document.querySelector('#size').addEventListener('input',e=>output.style.fontSize=e.target.value+'px');
+document.querySelector('#mode').addEventListener('click',e=>{const mono=document.body.classList.toggle('mono');e.target.textContent=mono?'Prikaz u boji':'Jednobojni prikaz';e.target.setAttribute('aria-pressed',String(mono));});
+document.fonts.ready.then(()=>document.documentElement.dataset.fontsReady='true');
+</script>
+</html>
